@@ -1,0 +1,132 @@
+.hero {
+    position: relative;
+    background-image: url('bg.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: darkgoldenrod
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #0056b3;
+}
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.image-sec img {
+    width: 100%;
+    height: auto;
+}
+
+.text{
+    background-color: #1a1a2e; /* Dark navy or charcoal */
+    padding: 40px;
+    max-width: 800px;
+    margin-top: -10px; /* Slight overlap */
+    position: relative;
+    z-index: 1;
+}
+
+.text h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: darkgoldenrod; /* Gold color */
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.services-sec { text-align: center; margin: 50px 0; } 
+.title { font-size: 2em; margin-bottom: 20px; } 
+.services-cont { display: flex; justify-content: 
+    center; gap: 20px; } 
+.service { border: 1px solid darkgoldenrod; 
+    border-radius: 10px; padding: 20px; width: 300px;
+     text-align: left; } 
+.service img { width: 100%; border-radius: 10px; } 
+.service-title { margin: 10px 0; color: darkgoldenrod; }
+ .contact-section { display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 50px; background-color: gainsboro; } 
+ .contact-title { font-size: 2em; margin-bottom: 20px; text-align: center; } 
+ .contact-container { display: flex; gap: 30px; max-width: 1000px; width: 100%; } 
+ .contact-form { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+  .contact-form input, .contact-form textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; } 
+  .contact-form button { padding: 10px 20px; border: none; border-radius: 5px; background-color: #007bff; color: white; font-size: 1em; cursor: pointer; }
+
+  .service-sec {
+  background: #1f3a52;
+  padding: 50px 20px;
+}
+
+.service-sec .title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.serv-cont {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* allows stacking on small screens */
+}
+.service {
+  background: #223f5a;
+  border: 2px solid gold;
+  border-radius: 12px;
+  width: 300px;
+  overflow: hidden;
+  color: white;
+}
+
+.service img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.service .title {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.service-description {
+  padding: 0 15px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}

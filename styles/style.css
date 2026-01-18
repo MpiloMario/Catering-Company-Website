@@ -1,0 +1,97 @@
+body {
+    background-color: #223D5A;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    margin: 0;
+
+}
+h1 {
+    color: darkgoldenrod;
+
+}
+h2{
+    color: darkgoldenrod;
+}
+header{
+    background-color: darkblue;
+    display: flex;
+    margin: 0;
+    padding: 20px 50px;
+    font-size: x-large;
+    box-sizing: border-box;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ul{
+    display: inline-flex;
+}
+.logo{
+    height: 80px;
+    width: auto;
+    position: relative;
+}
+.nav-button {
+    height: 30px; 
+    width: 30px;  
+    transition: transform 0.3s ease; 
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.nav-button {
+    height: 30px; 
+    width: 30px;  
+    transition: transform 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+nav ul li a:hover .nav-button {
+    transform: scale(1.2);
+}
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.whatsapp-btn img {
+  width: 35px;
+}
