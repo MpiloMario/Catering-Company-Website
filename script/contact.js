@@ -1,13 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    console.log("Contact script loaded");
-
     const form = document.getElementById("contactForm");
-    const responseMessage = document.getElementById("responseMessage");
+    const toast = document.getElementById("toast");
 
-    if (!form) {
-        console.error("Form not found");
-        return;
+    function showToast(message, isError = false) {
+        toast.textContent = message;
+        toast.classList.add("show");
+
+        if (isError) {
+            toast.classList.add("error");
+        } else {
+            toast.classList.remove("error");
+        }
+
+        setTimeout(() => {
+            toast.classList.remove("show");
+        }, 3000);
     }
 
     form.addEventListener("submit", async function (event) {
@@ -25,21 +33,14 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             if (response.ok) {
-                responseMessage.style.display = "block";
-                responseMessage.style.color = "green";
-                responseMessage.innerText = "Thank you! Your message has been sent successfully.";
+                showToast("Message received successfully!");
                 form.reset();
             } else {
-                responseMessage.style.display = "block";
-                responseMessage.style.color = "red";
-                responseMessage.innerText = "Oops! Something went wrong. Please try again.";
+                showToast("Something went wrong. Please try again.", true);
             }
 
         } catch (error) {
-            console.error(error);
-            responseMessage.style.display = "block";
-            responseMessage.style.color = "red";
-            responseMessage.innerText = "Network error. Please try again.";
+            showToast("Network error. Please try again.", true);
         }
     });
 
